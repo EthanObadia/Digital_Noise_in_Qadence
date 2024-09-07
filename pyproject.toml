@@ -1,0 +1,25 @@
+[project]
+name = "Qadence_Digital_Noise"
+description = "Implémentation et analyse des modèles de bruit numérique avec Qadence SDK"
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.8,<3.13"
+license = { text = "Apache-2.0" }
+authors = [ { name = "Ethan Obadia", email = "ethan.obad@gmail.com" } ]
+
+dependencies = [
+    "torch>=2.4.0",
+    "matplotlib~=3.7.1",
+    "jupyter~=1.0.0",
+    "pyqtorch==1.4.1"
+]
+
+[build-system]
+requires = ["hatchling", "hatch-jupyter-builder"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qadence_digital_noise"]
+
+[tool.hatch.jupyter]
+labextensions = true
