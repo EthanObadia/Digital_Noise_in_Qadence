@@ -9,9 +9,11 @@ authors = [ { name = "Ethan Obadia", email = "ethan.obad@gmail.com" } ]
 
 dependencies = [
     "torch>=2.4.0",
+    "numpy>=2.0.0",
     "matplotlib~=3.7.1",
     "jupyter~=1.0.0",
-    "pyqtorch==1.4.1"
+    "pyqtorch==1.4.1",
+    "qutip~=5.0.0"
 ]
 
 [build-system]
